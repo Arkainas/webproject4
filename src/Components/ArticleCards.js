@@ -1,5 +1,6 @@
 import React from "react";
 import articles from "./ArticleList.js"
+import './Articles.css'
 
 const ArticleCard = ({title, summary, link, published, topic }) => {
     return (

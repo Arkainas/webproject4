@@ -1,0 +1,33 @@
+.news-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    margin: 5px 0;
+}
+
+.article-card a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article-card a:hover {
+    text-decoration: underline;
+}
