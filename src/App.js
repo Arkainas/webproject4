@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './Components/Navbar.js'
 import './Footer.css'
 
 function Footer() {
@@ -13,12 +14,16 @@ function Footer() {
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Navbar></Navbar>
 
 
       <Footer />
+
     </div>
   );
 }
+
+
 
 export default App;
