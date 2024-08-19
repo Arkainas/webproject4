@@ -8,7 +8,7 @@ import ArticleCard from './Components/ArticleCards.js'
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar></Navbar>
       <ArticleCard />
       <Footer />

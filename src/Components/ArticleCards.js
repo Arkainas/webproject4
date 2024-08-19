@@ -1,5 +1,5 @@
 import React from "react";
-import articles from "ArticleList.js";
+import articles from "./ArticleList.js"
 
 const ArticleCard = ({title, summary, link, published, topic }) => {
     return (
@@ -12,3 +12,23 @@ const ArticleCard = ({title, summary, link, published, topic }) => {
         </div>
     )
 }
+
+const NewsPage = () => {
+    return (
+        <div className="news-page">
+            {articles.map((article, index) => (
+                <ArticleCard
+                key={index}
+                title={article.title}
+                summary={article.summary}
+                link={article.link}
+                published={article.published}
+                topic={article.topic}
+                />
+            )
+        )}
+        </div>
+    )
+}
+
+export default NewsPage;
