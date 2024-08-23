@@ -30,3 +30,12 @@ a {
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #333;
+}
