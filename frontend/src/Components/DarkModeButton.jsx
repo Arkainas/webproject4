@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 const DarkModeButton = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Load saved theme from localStorage
   useEffect(() => {
     const savedMode = localStorage.getItem("darkMode") === "true";
     setIsDarkMode(savedMode);
