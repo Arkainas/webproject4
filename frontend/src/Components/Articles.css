@@ -31,3 +31,41 @@
 .article-card a:hover {
     text-decoration: underline;
 }
+
+.news-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sorting-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sorting-controls div {
+    display: flex;
+    align-items: center;
+}
+
+.sorting-controls label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.article-card {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row, minus gap */
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
