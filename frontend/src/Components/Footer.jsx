@@ -5,7 +5,7 @@ function Footer() {
     return (
       <footer className="border-top footer text-muted">
         <div className="container">
-          2023 - JensenWebApp - <a href="link/to/privacy">Privacy</a>
+          2023 - JensenWebApp - <a href="link/to/privacy">Privacy</a> 
         </div>
       </footer>
     );
