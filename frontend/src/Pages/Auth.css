@@ -1,5 +1,16 @@
-/* Shared container styling for both Login and Register */
-.auth-container {
+/* Wrapper class for the login and registration pages */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Shared container styling for both Login and Register */
+  .auth-container {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     padding: 40px;
@@ -8,17 +19,6 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
-  }
-  
-  /* Body styling to center the auth forms */
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
-    margin: 0;
-    font-family: 'Arial', sans-serif;
   }
   
   /* Title styling */
