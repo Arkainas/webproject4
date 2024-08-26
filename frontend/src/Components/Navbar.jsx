@@ -11,6 +11,7 @@ function Navbar() {
                 <button><a href="/">Home </a></button>
                 <button><a href="/privacy">Privacy</a></button>
                 <button><a href="/login">Log in</a></button>
+                <button><a href="/register">Register</a></button>
             </div>
             <DarkModeButton />
         </nav>
