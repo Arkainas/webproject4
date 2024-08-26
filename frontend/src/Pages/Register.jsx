@@ -5,7 +5,7 @@ import "./Auth.css";
 const Register = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     const handleRegister = async () => {
         try {
@@ -20,7 +20,7 @@ const Register = () => {
 
             if (response.status === 201) {
                 localStorage.setItem('userRegistered', 'true');
-                history.push('/login');
+                navigate('/login');
             }
         } catch (error) {
             console.error('Error during registration', error)

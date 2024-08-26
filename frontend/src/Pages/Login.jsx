@@ -5,29 +5,33 @@ import "./Auth.css";
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     const handleLogin = async() => {
-        const response = await fetch('http://localhost:3000/api/login', {
-            method: 'POST',
-            headers:{'Content-Type': 'application/json'},
-            body: JSON.stringify({ username, password }),
-        });
-        const data = await response.json();
+        try {
+            const response = await fetch('http://localhost:3000/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, password }),
+            });
+            const data = await response.json();
 
-        if (data.token) {
-            localStorage.setItem('token', data.token);
-            alert('Login successful');
-            history.push('/');
-        } else {
-            alert(data.message);
+            if (data.token) {
+                localStorage.setItem('token', data.token);
+                alert('Login successful');
+                navigate('/')
+            } else {
+                alert(data.message);
+            }
+        } catch (error) {
+            console.error('Error during login', error);
+            alert('An error occured during login. Please try again.')
         }
     };
 
     return (
         <div className="auth-page">
             <div className="auth-container">
-
                 <h1>Login</h1>
                 <form>
                     <div>
