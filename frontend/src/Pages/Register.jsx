@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import "./Auth.css";
 
 const Register = () => {
     const [username, setUsername] = useState('')
@@ -27,7 +28,7 @@ const Register = () => {
         }
     };
     return (
-        <div>
+        <div className="auth-container">
           <h1>Register</h1>
           <form>
             <div>
