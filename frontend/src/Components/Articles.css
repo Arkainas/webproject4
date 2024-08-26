@@ -1,41 +1,24 @@
-.news-page {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+body {
+    background-color: #f0f0f0;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.article-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.article-card h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.article-card p {
-    margin: 5px 0;
-}
-
-.article-card a {
-    display: block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.article-card a:hover {
-    text-decoration: underline;
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .news-page {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: inherit; 
 }
 
 .sorting-controls {
@@ -53,6 +36,22 @@
 .sorting-controls label {
     margin-right: 10px;
     font-weight: bold;
+    color: inherit; 
+}
+
+.sorting-controls select {
+    background: linear-gradient(135deg, #f37335, #fdc830);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sorting-controls select:hover {
+    background: linear-gradient(135deg, #fdc830, #f37335);
 }
 
 .articles-container {
@@ -63,9 +62,41 @@
 
 .article-card {
     flex: 1 1 calc(33.333% - 20px); /* 3 cards per row, minus gap */
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2); /* Adjusted background to ensure text visibility */
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly lighter border for better contrast */
+    color: inherit; /* Inherit text color from body */
     box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.article-card:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly lighter background on hover */
+    transform: scale(1.02);
+}
+
+.article-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: inherit; /* Inherit text color from body */
+}
+
+.article-card p {
+    margin: 5px 0;
+    color: inherit; /* Inherit text color from body */
+}
+
+.article-card a {
+    display: block;
+    margin-top: 10px;
+    color: #fdc830; /* Use gradient color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.article-card a:hover {
+    color: #f37335; /* Change link color on hover */
+    text-decoration: underline;
 }
