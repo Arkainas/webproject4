@@ -10,6 +10,7 @@ function Navbar() {
             <div className="nav-buttons">
                 <button><a href="/">Home </a></button>
                 <button><a href="/privacy">Privacy</a></button>
+                <button><a href="/login">Log in</a></button>
             </div>
             <DarkModeButton />
         </nav>
