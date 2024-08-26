@@ -25,14 +25,13 @@ const ScrollToTop = () => {
     };
 
     return (
-        <button 
-        className="scroll-to-top" 
-        onClick={scrollOnClick} 
-        style={{ display: isVisible ? 'block' : 'none'}}
+        <button
+            className={`scroll-to-top ${isVisible ? 'show' : 'hide'}`}
+            onClick={scrollOnClick}
         >
             Go to top
         </button>
-    )
+    );
 }
 
 export default ScrollToTop;
