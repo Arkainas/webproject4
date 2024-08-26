@@ -8,8 +8,8 @@ function Navbar() {
         <nav className="navbar">
             <div className="brand">Jensen News Page</div>
             <div className="nav-buttons">
-                <a href="/">Home</a>
-                <a href="/privacy">Privacy</a>
+                <button><a href="/">Home </a></button>
+                <button><a href="/privacy">Privacy</a></button>
             </div>
             <DarkModeButton />
         </nav>
